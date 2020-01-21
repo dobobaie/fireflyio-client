@@ -1,2 +1,2 @@
 # fireflyio-client
-Client for fireflyio framework
+Client for fireflyio framework  

@@ -58,6 +58,16 @@ http.put('/users/123456', {
 .catch(err => console.error(err));
 ```
 
+## ⚙️ Options 
+
+`const http = new FireflyioClient(fireflyio_api_url: string, options: object);`   
+
+Name parameter | Type | Default | Description
+--- | --- | --- | ---
+debug | `boolean` | `false` | Enable debug mode
+timeout | `number` | `5000` | Timeout in milliseconds before to stop the request
+socket | `object` | `undefined` | [Socket.io Client](https://www.npmjs.com/package/socket.io-client) options
+
 ## 👥 Contributing
 
 Please help us to improve the project by contributing :)  

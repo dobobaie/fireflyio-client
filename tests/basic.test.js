@@ -1,34 +1,6 @@
-const io = require('socket.io-client');
-const Fireflyio = require('../../firefly-io/lib');
 const FireflyioClient = require('../lib');
 
 (async () => {
-  // ---
-  // const fireflyio = new Fireflyio();
-  
-  // fireflyio
-  //   .delete('/users/:id/delete', ctx => {
-  //     console.log('/users/:id/delete', ctx);
-  //     ctx.body = {
-  //       result: true
-  //     };
-  //   })
-  //   .post('/login', ctx => {
-  //     console.log('/login', ctx);
-  //     ctx.body = {
-  //       result: true
-  //     };
-  //   })
-  //   .get('/hello', ctx => {
-  //     console.log('/hello', ctx);
-  //     ctx.body = {
-  //       message: 'Hello'
-  //     };
-  //   });
-
-  // await fireflyio.listen(2525);
-  // ---
-
   // ---
   const fireflyioClient = new FireflyioClient('http://localhost:2525/', {
     debug: true,
@@ -52,6 +24,5 @@ const FireflyioClient = require('../lib');
   
   fireflyioClient.get('/tutu')
     .catch(err => console.log(`error`, `get('/tutu')`, err));
-
   // ---
 })();

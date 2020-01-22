@@ -65,7 +65,7 @@ http.put('/users/123456', {
 Name parameter | Type | Default | Description
 --- | --- | --- | ---
 debug | `boolean` | `false` | Enable debug mode
-timeout | `number` | `5000` | Timeout in milliseconds before to stop the request
+timeout | `number` | `15000` | Timeout in milliseconds before to stop the request
 socket | `object` | `undefined` | [Socket.io Client](https://www.npmjs.com/package/socket.io-client) options
 
 ## 👥 Contributing

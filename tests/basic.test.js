@@ -30,7 +30,10 @@ const FireflyioClient = require('../lib');
   // ---
 
   // ---
-  const fireflyioClient = new FireflyioClient('http://localhost:2525/');
+  const fireflyioClient = new FireflyioClient('http://localhost:2525/', {
+    debug: true,
+    timeout: 5000
+  });
   
   // fireflyioClient.delete('/users/toto/delete').then(response =>
   //   console.log('delete /users/toto/delete response', response)

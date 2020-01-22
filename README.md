@@ -1,6 +1,12 @@
 # [BETA] fireflyio-client
 Expressive [fireflyio](https://github.com/dobobaie/fireflyio) framework for javacript to send request to `fireflyio` framework.  
 
+## 🚀 Fireflyio
+
+[Fireflyio server](https://github.com/dobobaie/fireflyio)  
+[Fireflyio client](https://github.com/dobobaie/fireflyio-client)  
+[Fireflyio module monitoring](https://github.com/dobobaie/fireflyio-monitoring)  
+
 ## ☁️ Installation
 
 ```

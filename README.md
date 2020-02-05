@@ -5,7 +5,9 @@ Expressive [fireflyio](https://github.com/dobobaie/fireflyio) framework for java
 
 [Fireflyio server](https://github.com/dobobaie/fireflyio)  
 [Fireflyio client](https://github.com/dobobaie/fireflyio-client)  
+[Fireflyio module router](https://github.com/dobobaie/fireflyio-router)  
 [Fireflyio module monitoring](https://github.com/dobobaie/fireflyio-monitoring)  
+[Fireflyio module ui-monitoring](https://github.com/dobobaie/fireflyio-ui-monitoring)  
 
 ## ☁️ Installation
 
@@ -55,14 +57,18 @@ http.post('/users', {
 ### `put(route: string, body: object, headers: object)` method
 
 ```js
-http.put('/users/123456', {
+const result = await http.put('/users/123456', {
   username: 'JeanPierre'
-}, {
-  'Content-Type': 'application/json' // default
-})
-.then(res => console.log(res))
-.catch(err => console.error(err));
+}).catch(err => console.error(err));
 ```
+
+### `app.socket` 
+
+`app.socket` give you more control about the native socket.
+
+### `app.socket.on(event: string, callback: Function)`
+
+Called each time the server send a specific socket event.  
 
 ## ⚙️ Options 
 

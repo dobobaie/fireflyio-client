@@ -1,7 +1,21 @@
-const Fireflyio = require('../../fireflyio/lib');
-const FireflyioClient = require('../../fireflyio-client/lib');
-const FireflyioRouter = require('../../fireflyio-router/lib');
+const FireflyioClient = require('..//lib');
 
-(async () => {
-  // ---
-})();
+const fireflyioClient = new FireflyioClient('http://localhost:4000/', {
+  debug: true,
+  timeout: 5000
+});
+
+fireflyioClient.socket.on('HELLO_CLIENT', response => {
+  console.log('HELLO_CLIENT', response);
+});
+
+fireflyioClient.get('/hello').then(response => {
+  console.log('get', response);
+});
+
+fireflyioClient.post('/login', {
+  username: 'myUsername',
+  password: 'myPassword'
+}).then(response => {
+  console.log('post', response);
+});

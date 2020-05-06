@@ -23,6 +23,7 @@
   "homepage": "https://github.com/dobobaie/fireflyio-client#readme",
   "dependencies": {
     "socket.io-client": "^2.3.0",
+    "uuid": "^8.0.0",
     "uuidv4": "^6.0.1"
   }
 }
